@@ -67,8 +67,8 @@ print(count_string(text))
 
 def example1(a:str,b:str)-> int:
     cant_num =0
-    for i in range(1,11):
-        print(i)
+    for i in range(1,101):
+        
         if (i % 3 == 0 and  i % 5 == 0 ):
             print(a+b)
         elif (i % 3 == 0):
@@ -76,6 +76,7 @@ def example1(a:str,b:str)-> int:
         elif (i % 5 == 0):
             print(b)
         else:
+            print(i)
             cant_num += 1
 
     return cant_num
