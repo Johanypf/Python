@@ -9,18 +9,17 @@ for i in word:
         cant_words[i] = 1
 
 print(cant_words)
-mayor =  0  
+mayor =  0
+max_word = []  
 for x in cant_words:
     if cant_words[x] >= mayor:
         mayor = cant_words[x]
-
 print(mayor)
-max_word = []
 
 for i in cant_words:
     if cant_words[i] >= mayor:
         max_word.append(i)
 
 print(max_word)
-a= sorted(max_word)
+a=sorted(max_word)
 print(sorted(a[0]))
