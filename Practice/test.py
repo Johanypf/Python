@@ -1,6 +1,9 @@
-x=5
-i=3
-while i<= x:
-    print(i)
-    i+=1
-
+a= str(89)
+digitos_a = list(a)
+print(digitos_a )
+    
+b = str(998)
+digitos_b = list(b)
+print(digitos_b)
+if digitos_a is digitos_b:
+    print(True)

@@ -51,10 +51,5 @@ def sucesion_fibonacci(cantidad_numeros:int)->str:
             data_final.append(num)
             i+=1
 
-    
     result_string = ",".join(map(str, data_final))
-    
     return result_string
-
-
-print(sucesion_fibonacci(3))
