@@ -1,9 +1,8 @@
-a= str(89)
-digitos_a = list(a)
-print(digitos_a )
-    
-b = str(998)
-digitos_b = list(b)
-print(digitos_b)
-if digitos_a is digitos_b:
-    print(True)
+word = {'m': 1, 'a': 3, 'n': 2, 'z': 1}
+rep = []
+for x,y in word.items():
+    if y > 1:
+        rep.append(x)
+
+
+print(rep)
