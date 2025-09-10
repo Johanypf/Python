@@ -19,4 +19,4 @@ def  buscar_elemento(entrada:list,buscado:int)-> int:
 
     return indice
         
-print(buscar_elemento(nuemros,2))
+print(buscar_elemento(nuemros,10))
