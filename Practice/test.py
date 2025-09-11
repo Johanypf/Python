@@ -23,4 +23,6 @@ for i in pokemones:
     if poderes >= 600:
         list_final.append(i['nombre'])
 
+
+
 print(list_final)

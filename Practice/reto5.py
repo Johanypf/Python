@@ -12,7 +12,7 @@ def  buscar_elemento(entrada:list,buscado:int)-> int:
     for i in entrada:
         if i == buscado:
             indice = entrada.index(i)
-            print(i)
+     
             break
         else:
                 indice = -1

@@ -10,9 +10,6 @@ def encontrar_mayor(entrada:list)->int:
     for i in entrada:
         if i > mayor:
             mayor = i
-
-
-
     return mayor
 
 
