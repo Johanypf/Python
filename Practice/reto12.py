@@ -50,7 +50,7 @@ vuelos = {
 def mejor_aerolinea(vuelos:dict)->str:
 
     new_dict = {}
-    for i, y in vuelos.items():
+    for y in vuelos.values():
         aerolinea = y["aerolinea"]
         retraso = y["retraso"]
 
@@ -72,3 +72,41 @@ def mejor_aerolinea(vuelos:dict)->str:
     return best_aerolinea
 
 print(mejor_aerolinea(vuelos))
+
+
+
+
+
+
+
+
+
+
+
+
+
+###### TESTS 
+# new_dict = {}
+
+
+# for i, y in vuelos.items():
+#     aerolinea = y["aerolinea"]
+#     retraso = y["retraso"]
+
+#     if aerolinea not in new_dict:
+#         new_dict[aerolinea] = {"suma": retraso, "conteo": 1}
+#     else:
+#         new_dict[aerolinea]["suma"] += retraso
+#         new_dict[aerolinea]["conteo"] += 1
+    
+
+# promedios = {}
+# for aerolinea, datos in new_dict.items():
+#     promedio = datos["suma"] / datos["conteo"] if datos["conteo"] > 0 else 0
+#     promedios[aerolinea] = promedio
+
+
+# print(new_dict)
+# print(promedios)
+# best_aerolinea = min(promedios, key=promedios.get)
+# print(best_aerolinea) 
