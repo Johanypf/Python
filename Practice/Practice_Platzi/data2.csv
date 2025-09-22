@@ -1,0 +1,10 @@
+Edad,Nivel_Stres,Colesterol,BMI,Medicacion,Historia_Familiar,Actividad_Fisica,Fumador,Glucosa,Enfermedad_Corazon,Hipertension
+69,9,242.4,25.8,Ninguna,Si,Baja,No,127.8,Si,Si
+32,10,177.2,23.4,Ninguna,No,Baja,No,105.9,No,No
+78,3,193,18.7,Ninguna,No,Moderada,No,102.7,No,No
+38,10,268.1,22.1,InhibidorACE,No,Baja,No,99,No,Si
+20,3,224.1,21.9,BloqueadorBeta,Si,Alta,No,135,No,Si
+39,0,211.6,27.6,BloqueadorBeta,Si,Alta,No,106.3,No,No
+70,1,249.2,25.8,Ninguna,No,Moderada,No,144.7,No,Si
+19,7,218.3,36.5,BloqueadorBeta,Si,Baja,Si,132.7,Si,Si
+47,5,190.9,24.3,Ninguna,No,Alta,No,100.3,No,No

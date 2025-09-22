@@ -5,31 +5,14 @@ numeros = [
 ]
 
 
-def operar(a, b, op):
-    if op == '+':
-        return a + b
-    elif op == '-':
-        return a - b
-    elif op == '*':
-        return a * b
-    elif op == '/':
-        return a / b
+vector_1 = (5,8,9)
+vector_2 = (5,8,9)
+total = []
+for i in range(3):
+    x = vector_1[i]
+    y = vector_2[i]
+    total.append(vector_1[i]+ vector_2[i])
 
-operacion = '+'
- 
-for fila in range(0,3):
-   x = numeros[fila][fila]
-   result = operar(x,x,"+")
-   numeros[fila][fila] = result
-  
-for x in range(1,4,2):
-    y= numeros[x-1][-x]
-    result_2 = operar(y,y,"+")
-    numeros[x-1][-x] = result_2
+total_tupla = tuple(total)
 
-
-# Cadena con el símbolo de la operación a realizar. El símbolo puede ser '+', '-', '*' o '/'.
-
-print(numeros)
-
-
+print(total_tupla)
