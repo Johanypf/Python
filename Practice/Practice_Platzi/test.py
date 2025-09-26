@@ -1,24 +1,18 @@
-map = {}
+import random
 
-# Agregar pares clave-valor al Map
-map["key1"] = "value1"
-map["key2"] = "value2"
-map[3] = "value3"
+voc = ["a","e","i","o","u"]
 
-print(map)
-# Obtener el valor asociado a una clave
-print(map.get("key1"))  # Output: "value1"
 
-# Verificar si una clave existe en el Map
-print("key2" in map)  # Output: True
+random.shuffle(voc)
+print("letras shuffle :" ,voc)
 
-# # Eliminar una clave del Map
-# del map["key2"]
+print(random.choice(voc))
 
-# # Verificar si una clave existe en el Map después de ser eliminada
-# print("key2" in map)  # Output: False
+num = [ i for i in range(1,100) ]
+print(num)
+print(random.choice(num))
 
-# # Vaciar el Map
-# map.clear()
+import statistics
 
-# Verificar el tamaño del Map después de ser vaciado
+num = [1,2,3,4,6,7,8]
+print(statistics.mean(num))
