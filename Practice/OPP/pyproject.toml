@@ -1,0 +1,7 @@
+[project]
+name = "opp"
+version = "0.1.0"
+description = "Biblioteca project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
