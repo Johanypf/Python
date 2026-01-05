@@ -19,6 +19,6 @@ def decimal_to_binario(x):
         return binario
 
 
-print(decimal_to_binario(3))
+print(decimal_to_binario(4))
 
     
