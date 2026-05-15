@@ -1,0 +1,3 @@
+https://retosdeprogramacion.com/ejercicios/
+
+https://github.com/mouredev/Weekly-Challenge-2022-Kotlin/pull/1424/commits/f93b61ebb3862437d85e06494106f9243154bcb6#diff-50f605602787370322b7dc13648da9d4244f984c1a94b51057804ceffede9bef
