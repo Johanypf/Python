@@ -1,4 +1,4 @@
-
+"""Ejemplo de manejo de excepciones en Python."""
 start = True
 
 while start:

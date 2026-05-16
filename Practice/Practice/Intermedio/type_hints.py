@@ -1,7 +1,9 @@
 """  Typing con Python"""
 
-from doctest import Example
 
+from docstring import ejemplo_docstring
+
+ejemplo_docstring()
 
 variable: int | str =  42
 print(f'Variable {variable}, del tipo {type(variable)}')
@@ -46,3 +48,5 @@ articles: list[list] = [
     ]
 
 print(articles)
+
+
