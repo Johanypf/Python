@@ -3,8 +3,9 @@ import json
 import urllib
 import urllib.request
 import urllib.parse
-from config import BASE_URL
-from main import APIKeyError
+from .config import BASE_URL
+from .exceptions import APIKeyError
+
 
 
 def validate_api_key(api_key):

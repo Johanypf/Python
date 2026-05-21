@@ -66,3 +66,19 @@ def clean_text(text: str) -> str:
         return ""
     return text.strip().lower()
 
+def get_sources(articles):
+    return set(article.get("source").get("name") for article in articles if article.get("source") and article.get("source").get("name"))
+
+def get_articles_by_source(articles : list[dict], source : str ) -> list[dict]:
+
+    return list(filter(
+        lambda article : article['source']['name'].lower() == source.lower(),articles))
+
+
+def get_reading_time(article: dict) -> dict:
+    "calcula tiempo de lectura"
+
+    minutes = len(article["content"]) // 200 + 1
+    article["reading_time"] = minutes
+    return article
+
