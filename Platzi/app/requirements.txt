@@ -1,0 +1,8 @@
+fastjsonschema==2.21.2
+jaxlib==0.4.38
+json5==0.13.0
+matplotlib==3.10.0
+numpy==1.26.4
+fastapi
+uvicorn[standard]
+pandas
