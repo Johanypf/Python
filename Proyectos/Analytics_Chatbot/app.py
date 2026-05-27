@@ -78,8 +78,6 @@ if pregunta:
                     messages=[{"role": "user", "content": prompt}],
                 )
                 codigo = respuesta_llm.choices[0].message.content.strip()
-                print("Código generado por LLM:")
-                print(codigo)
 
                 entorno = {"df_paises": df_paises, "pd": pd}
                 exec(codigo, entorno)
