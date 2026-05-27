@@ -46,7 +46,7 @@ Resultado + visualización en interfaz Streamlit
 - "¿Cuántos países hay en el dataset?"
 - "¿Cuál es la población total de América Latina?"
 - "¿Cuál es el país con mayor población?"
-- "Muéstrame los países agrupados por región"
+- "¿Cuántas ciudades hay por país?"
 
 ## 🚀 Instalación y uso
 
