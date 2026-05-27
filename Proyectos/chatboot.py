@@ -1,7 +1,7 @@
 import streamlit as st
 from google import genai
 
-client = genai.Client(api_key="AIzaSyBi2Hyvt5pe2tHZ4qe7fBGmnNWp0dg3A-c")
+client = genai.Client(api_key="-------")
 
 st.set_page_config(page_title="Gemini Chatbot", page_icon="🤖")
 
@@ -14,7 +14,8 @@ if "messages" not in st.session_state:
     ]
 
 
-user_input = st.text_input("Escribe tu mensaje",key="user_input")
+user_input = st.text_input("Escribe tu mensaje", key="user_input")
+
 
 def chat_gemini(messages):
     # Converti mensajes a un solo prompt de texto
@@ -22,23 +23,21 @@ def chat_gemini(messages):
 
     response = client.models.generate_content(
         model="gemini-3-flash-preview",  #
-        contents=prompt
-
+        contents=prompt,
     )
 
-    return response.text  
+    return response.text
 
 
 if st.button("Enviar"):
     if user_input:
-        
         st.session_state.messages.append({"role": "user", "content": user_input})
-       
+
         with st.spinner("Pensando..."):
             reply = chat_gemini(st.session_state.messages)
-    
+
         st.session_state.messages.append({"role": "assistant", "content": reply})
-    
+
 # Mostrar historial
 for msg in st.session_state.messages[1:]:
     if msg["role"] == "user":
